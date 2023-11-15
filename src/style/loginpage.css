@@ -1,0 +1,33 @@
+.main-wrapper {
+  background-image: url(../assets//pexels-joyston-judah-933054.jpg);
+  background-size: cover;
+}
+
+.main-wrapper {
+  text-align: center;
+  padding: 300px 0;
+}
+
+.main-wrapper .login-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 20%;
+  margin: auto;
+}
+
+.main-wrapper .login-form input {
+  margin: 10px 0;
+  padding: 10px 5px;
+  outline: none;
+}
+
+.main-wrapper .login-form .login-button {
+  padding: 10px 0;
+  font-size: 24px;
+  background: rgb(71, 41, 95);
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+/* HomePage.css */
+
+body {
+  color: white;
+  background-color: black;
+  font-family: "Arial", sans-serif;
+  margin: 0; /* Remove default body margin */
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Style for each genre slider */
+.MovieSlider {
+  margin-bottom: 20px;
+}
+
+.MovieSlider h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for MovieCard */
+.MovieCard {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent; /* Add border to MovieCard */
+}
+
+.MovieCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for the selected (active) MovieCard */
+.MovieCard.active {
+  border-color: red;
+}

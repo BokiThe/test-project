@@ -1,0 +1,28 @@
+/* MovieSlider.css */
+.movie-slider {
+  margin-bottom: 20px;
+}
+
+.movie-slider.active h2 {
+  color: red;
+  text-decoration: underline; /* Add underline when the title is active */
+}
+
+.movie-slider-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.movie-card {
+  flex: 0 0 calc(25% - 10px); /* 4 images per row with some margin */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    flex: 0 0 calc(50% - 10px); /* 2 images per row on smaller screens */
+  }
+}

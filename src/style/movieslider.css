@@ -1,0 +1,58 @@
+/* MovieSlider.css */
+.movie-slider {
+  margin-bottom: 20px;
+}
+
+.movie-slider h2 {
+  color: #fff;
+
+  /* Add underline when the title is active */
+}
+
+.slider {
+  display: flex;
+  cursor: pointer;
+}
+
+.movie-slider-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  flex: 0 0 calc(25% - 10px); /* 4 images per row with some margin */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 40%;
+  object-fit: fill;
+  border: 1px solid transparent; /* Transparent border by default */
+}
+
+.movie-card.active {
+  border-color: red;
+  /* Red border when active */
+}
+
+.movie-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  display: none; /* Hidden by default */
+}
+
+.movie-card.active .movie-title {
+  display: block; /* Display the title when active */
+}
